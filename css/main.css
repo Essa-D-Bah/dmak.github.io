@@ -76,7 +76,7 @@ a {
   color: black;
 }
 .content {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 2em;
 }
@@ -135,7 +135,7 @@ a {
 
 .about {
   margin: 0 auto;
-  width: 100%;
+  width:90%;
   padding: 1em;
 }
 .about_nav {
@@ -306,16 +306,16 @@ a {
 }
 
 .box2 {
-  background-image: url('../images/Home-Various-Categories\ _full.png');
+  background-image: url('../images/Home-Various-Categories\ _full\ .png');
 }
 
 .box3 {
-  background-image: url('../images/AnchFull.png');
+  background-image: url('../images/AnchFull\ .png');
 }
 
 
 .box4{
-  background-image: url(../images/Dmak.png);
+  background-image: url('../images/Dmak.png');
 }
 
 .project:hover {
@@ -325,6 +325,11 @@ a {
 
 .contact {
   margin-top: 4em;
+}
+
+.message form{
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contact_elements {
@@ -589,4 +594,44 @@ input:focus {
     }
 }
 
+@media screen and (max-width:400px) {
+     .icon{
+      display: none;
+     }
+
+     .hero_socials{
+      width: 100%;
+     }
+
+     .hero_socials ul{
+      width: 100%;
+     }
+
+     .hero_socials ul li a{
+      font-size: 1em;
+      padding: 0;
+     }
+
+     .about_sub_con{
+      padding: 0;
+      margin: 0;
+
+     }
+     .footer{
+      width: 100%;
+     }
+
+     body{
+      border: solid 1px ;
+     }
+
+     .footer_socials{
+      display: none;
+     }
+     .project{
+      padding: 0;
+      margin: 0;
+     }
+
+}
 
