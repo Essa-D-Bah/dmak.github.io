@@ -1,9 +1,9 @@
 
-const menu = document.querySelector('.menu');
+const menuToOpenNav = document.querySelector('.menu');
 
 
-if (menu) {
-  menu.addEventListener('click', () => {
+if (menuToOpenNav) {
+  menuToOpenNav.addEventListener('click', () => {
       document.querySelector('.links').classList.toggle('activeLinks');
       document.querySelector('.widget').classList.toggle('rotateWidget')
   });
