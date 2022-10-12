@@ -1,0 +1,375 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1224px;
+  padding: 0 40px;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+.links {
+  position: absolute;
+  background-color: white;
+  bottom: -100em;
+  width: 100%;
+  text-align: center;
+  padding-top: 3em;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: bottom linear 200ms;
+}
+
+.close {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  display: none;
+  font-size: 1.5em;
+}
+
+.menu span {
+  font-size: 2.5em;
+  color: #4d4d4d;
+}
+
+.link {
+  list-style: none;
+  margin: 1.5em 0;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.link a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 1.2em;
+  font-family: 'Roboto';
+  padding: 0.2em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+  width: 95%;
+  background-color: white;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh- (4em));
+  margin-top: 4em;
+}
+.heroCon {
+  width: 75%;
+  max-width: 300px;
+  min-width: 250px;
+  margin: 0 auto;
+  background-color: #204ac0;
+  border-top-right-radius: 70%;
+  border-top-left-radius: 70%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  height: 20em;
+}
+
+.heroImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+
+.heroImg img {
+  max-width: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  margin-bottom: -20em;
+}
+
+.heroText {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  line-height: 1.4;
+}
+
+.heroText h3 {
+  padding: 0.2em 0;
+  font-size: 2em;
+  font-family: 'Roboto';
+  color: #4d4d4d;
+}
+
+.heroText h4 {
+  font-size: 1.2em;
+  padding: 0.2em 0;
+  font-family: 'Roboto';
+  color: #4d4d4d;
+}
+
+.heroText p {
+  font-size: 1.2em;
+  padding: 1em 0;
+  font-family: 'Montserrat';
+  color: #4d4d4d;
+}
+
+.btn {
+  padding: 20px 32px;
+  background-color: #204ac0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: white;
+  margin: 0.3em 0;
+  font-family: 'Roboto';
+  display: flex;
+  align-items: center;
+  width: 11em;
+  max-width: 11em;
+  justify-content: space-between;
+}
+
+.logo h2 {
+  font-family: 'Roboto';
+  color: #4d4d4d;
+  font-weight: 300;
+}
+.activeLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  bottom: 4em;
+  transition: bottom linear 200ms;
+}
+
+.widget {
+  transform: rotate(0deg);
+  transition: transform linear 200ms;
+}
+
+.rotateWidget {
+  transform: rotate(90deg);
+  transition: transform linear 200ms;
+}
+
+.about_me {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+.about_intro {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.about_intro h3 {
+  font-size: 2em;
+  font-family: 'Roboto';
+  color: #4d4d4d;
+}
+.about_intro p {
+  font-size: 1.2em;
+  font-family: 'Montserrat';
+}
+.about_me_text {
+  padding: 1.5em 0;
+}
+.about_me_text p {
+  font-size: 1.2em;
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  padding: 1em 0;
+  color: #4d4d4d;
+}
+
+.about_me_image {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_me_image img {
+  max-width: 100%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.experience p {
+  font-size: 0.9em;
+}
+
+.experience h4 {
+  font-size: 2em;
+  font-family: 'Roboto';
+  color: #4d4d4d;
+}
+
+.experience div {
+  width: 20%;
+}
+
+.bar {
+  height: 0.5em;
+  width: 100%;
+  background-color: #204ac0;
+  border-radius: 2px;
+}
+
+.label,
+.percent {
+  font-size: 1em;
+  font-family: 'Montserrat';
+}
+
+.skill {
+  padding: 1.5em 0;
+}
+
+.skill_bar {
+  padding: 1em 0;
+}
+
+.skill h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.skill_name {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #4d4d4d;
+  font-family: 'Roboto';
+}
+
+.skill h3 span {
+  font-size: 1.7em;
+  color: #204ac0;
+}
+
+.hidden_skill {
+  display: none;
+}
+
+.skill_label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active_skill {
+  display: block;
+}
+
+.expand {
+  transform: rotate(0deg);
+  transition: transform ease-in-out 200ms;
+}
+
+.open_expand {
+  transform: rotate(-180deg);
+  transition: transform ease-in-out 200ms;
+}
+
+@media screen and (min-width: 768px) {
+  .heroCon {
+    width: 35%;
+    max-width: 0;
+    min-width: none;
+  }
+  .heroText {
+    width: 55%;
+  }
+  .hero {
+    display: flex;
+    margin-top: 6em;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: nowrap;
+    position: static;
+    height: auto;
+    align-items: center;
+    padding-top: 0;
+    width: 70%;
+    justify-content: space-between;
+  }
+  .link {
+    font-size: 0.9em;
+    padding: 0;
+  }
+  nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 87%;
+    max-width: 1224px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .link p {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .about_me {
+    padding: 4em 0;
+  }
+
+  .about_me_con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about_me_image {
+    width: 35%;
+    justify-content: start;
+  }
+
+  .about_me_text {
+    width: 55%;
+  }
+
+  .all_skills_con {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill {
+    width: 45%;
+  }
+}
