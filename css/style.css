@@ -1,6 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 section {
@@ -141,6 +146,7 @@ nav {
   align-items: center;
   width: 11em;
   max-width: 11em;
+  cursor: pointer;
   justify-content: space-between;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -200,7 +206,7 @@ nav {
 }
 
 .about_me_image {
-  width: 65%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -237,8 +243,13 @@ nav {
 .bar {
   height: 0.5em;
   width: 100%;
-  background-color: #204ac0;
+  background-color: #9d9797;
   border-radius: 2px;
+}
+
+.bar div {
+  height: inherit;
+  background-color: #204ac0;
 }
 
 .label,
@@ -288,6 +299,7 @@ nav {
 .active_skill {
   display: block;
 }
+
 
 .expand {
   z-index: 0;
@@ -354,6 +366,8 @@ nav {
   height: 15em;
 }
 
+
+
 .ct_con {
   display: flex;
   align-items: center;
@@ -402,24 +416,24 @@ textarea {
   margin-top: 1em;
 }
 
-footer{
+footer {
   background-color: #204ac0;
   margin-bottom: 4em;
   color: white;
   padding: 3em 20px;
 }
 
-footer li{
+footer li {
   list-style: none;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: white;
-  font-family: "roboto";
+  font-family: 'roboto';
 }
 
-.footer_socials{
+.footer_socials {
   display: flex;
   justify-content: start;
   gap: 40px;
@@ -427,34 +441,46 @@ footer a{
   padding-top: 1em;
 }
 
-.footer_nav{
+.footer_nav {
   font-size: 1.5em;
   padding-top: 1em;
 }
 
-.footer_nav li{
-  margin: .4em 0;
+.footer_nav li {
+  margin: 0.4em 0;
 }
 
-.copy{
+.copy {
   padding-top: 2em;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
-
-.footer_hero h3{
+.footer_hero h3 {
   font-size: 2em;
-  font-family: "roboto";
-
+  font-family: 'roboto';
 }
 
-.footer_hero p{
+.footer_hero p {
   font-size: 1.4em;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
+
+.active_link {
+  color: #204ac0;
+  font-size: 4em;
+}
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
+  .white_space {
+    display: none;
+  }
   .heroCon {
     width: 35%;
   }
@@ -494,7 +520,7 @@ footer a{
     align-items: center;
     justify-content: space-between;
     height: 4em;
-    background-color: white;  
+    background-color: white;
   }
 
   .link p {
@@ -512,11 +538,12 @@ footer a{
   .about_me_con {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   .about_me_image {
-    width: 35%;
+    width: 40%;
     justify-content: start;
+    padding-top: 3em;
   }
 
   .about_me_text {
@@ -528,7 +555,7 @@ footer a{
     justify-content: space-between;
   }
 
-  .skills{
+  .skills {
     width: 80%;
     margin: 0 auto;
   }
@@ -543,7 +570,7 @@ footer a{
   }
 
   .service {
-    width: 30%;
+    width: 23%;
   }
 
   .folios_content {
@@ -579,22 +606,22 @@ footer a{
     justify-content: space-between;
   }
 
-  footer{
+  footer {
     margin-bottom: 0;
   }
 
-  .footer_socials{
+  .footer_socials {
     gap: 20px;
   }
-  .footer_con{
+  .footer_con {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin:  0 auto;
+    margin: 0 auto;
   }
 
-  .footer_nav{
+  .footer_nav {
     width: 50%;
     font-size: 1.1em;
     display: flex;
@@ -602,11 +629,11 @@ footer a{
     align-items: center;
   }
 
-  .footer_hero h3{
+  .footer_hero h3 {
     font-size: 1.4em;
   }
 
-  .footer_hero p{
+  .footer_hero p {
     font-size: 1.3em;
   }
 }
@@ -627,7 +654,7 @@ footer a{
     width: 50%;
   }
 
-  .footer_nav{
+  .footer_nav {
     width: 50%;
     font-size: 1.5em;
     display: flex;
@@ -635,11 +662,11 @@ footer a{
     align-items: center;
   }
 
-  .footer_hero h3{
+  .footer_hero h3 {
     font-size: 2em;
   }
 
-  .footer_hero p{
+  .footer_hero p {
     font-size: 1.5em;
   }
 }
