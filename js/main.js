@@ -21,3 +21,16 @@ const showSkills = (clicked, showed) => {
 
 showSkills(skillLabel[0], hiddenSkills[0]);
 showSkills(skillLabel[1], hiddenSkills[1]);
+
+function sendMail() {
+  let params = {
+    from_name: document.getElementById('name').value,
+    email_id: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value,
+  };
+
+  emailjs.send('service_kp9uqj6', 'template_g4zn0cs', params).then((res) => {
+    alert('Success! ' + res.status);
+  });
+}

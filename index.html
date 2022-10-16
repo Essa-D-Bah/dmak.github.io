@@ -300,17 +300,17 @@
 
           <div class="contact_form">
             <form action="">
-              <input type="text" placeholder="Firstname" />
-              <input type="text" placeholder="Lastname" />
-              <input type="email" placeholder="Email" />
+              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="subject" placeholder="Subject" />
+              <input type="email" id="email" placeholder="Email" />
               <textarea
                 name=""
-                id=""
+                id="message"
                 cols="30"
                 rows="5"
                 placeholder="Message"
               ></textarea>
-              <button class="btn submit">
+              <button class="btn submit" onclick="sendMail()">
                 Submit
                 <span class="material-symbols-outlined">send</span>
               </button>
@@ -350,5 +350,14 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('hMaamN0feNcnb7ksf');
+      })();
+    </script>
   </body>
 </html>
