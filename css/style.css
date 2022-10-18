@@ -163,6 +163,11 @@ nav {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.targetScroll{
+  position: relative;
+  top: -60px;
+}
+
 .logo h2 {
   font-family: 'Roboto';
   color: #4d4d4d;
