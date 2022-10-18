@@ -43,9 +43,22 @@ for (let i = 0; i < percentages.length; i++) {
 // });
 
 const folios = document.querySelectorAll('.folio');
+const modal = document.querySelector('.modal');
+const closex = document.querySelector('.close');
+
+const modalImage = document.querySelector('.modal-image-con img');
+
+if (closex) {
+  closex.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+}
 
 folios.forEach((folio) => {
-  folio.addEventListener('click', () => {});
+  folio.addEventListener('click', () => {
+    modal.style.display = 'block';
+    modalImage.src = folio.children[0].src;
+  });
 });
 
 function sendMail() {
@@ -60,3 +73,4 @@ function sendMail() {
     alert('Success! ' + res.status);
   });
 }
+
